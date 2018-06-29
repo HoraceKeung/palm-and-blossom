@@ -1,0 +1,53 @@
+@import './color.css';
+@import "vue-snotify/styles/material.css";
+
+html {
+	font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	word-spacing: 1px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+}
+.flex-grow {
+	flex: 1;
+}
+button:disabled {
+	cursor: no-drop;
+}
+.btn, .pointer {
+	cursor: pointer;
+}
+.btn-pb-outline {
+	background-color: transparent;
+	border-radius: 0;
+	border: 0.125rem solid #000;
+}
+.btn-pb-outline:hover {
+	color: var(--green);
+	background-color: var(--pink);
+}
+.h-3 {
+	height: 3rem;
+}
+.bg-green {
+	background-color: var(--green);
+}
+.bg-pink {
+	background-color: var(--pink);
+}
+@media only screen and (max-width: 768px) {
+    .px-below-md-5 {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+.VueCarousel-dot {
+	margin-top: -1rem !important;
+}

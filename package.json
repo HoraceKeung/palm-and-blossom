@@ -1,0 +1,26 @@
+{
+  "name": "palm-and-blossom",
+  "version": "1.0.0",
+  "description": "Palm & Blossom",
+  "author": "Horace Keung <horacekeung@hotmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "bootstrap-css-only": "^4.1.1",
+    "nuxt": "^1.4.0",
+    "nuxt-fontawesome": "^0.3.0",
+    "vue-carousel": "^0.9.0",
+    "vue-snotify": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
