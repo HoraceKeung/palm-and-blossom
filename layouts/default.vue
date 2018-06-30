@@ -1,7 +1,7 @@
 <template>
 	<div class="d-flex flex-column" style="min-height: 100vh;">
 		<menu-bar/>
-		<div style="flex: 1"><nuxt/></div>
+		<div style="flex: 1; margin-top: 4rem;"><nuxt/></div>
 		<vue-snotify></vue-snotify>
 		<page-footer/>
 	</div>

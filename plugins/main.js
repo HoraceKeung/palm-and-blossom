@@ -1,18 +1,20 @@
 import Vue from 'vue'
 import Snotify from 'vue-snotify'
 import VueCarousel from 'vue-carousel'
+import VueInstagram from 'vue-instagram'
 import Hero from '~/components/Hero'
 Vue.use(Snotify)
 Vue.use(VueCarousel)
+Vue.use(VueInstagram)
 Vue.component('hero', Hero)
 
 // Global mixin
 Vue.mixin({
 	methods: {
 		goToBooking () {
-			if (this.$route.path === '/') {
+			if (this.$route.path === `/${this.$i18n.locale}`) {
 				document.getElementById('contact-section').scrollIntoView()
-			} else { this.$router.push('/#contact-section') }
+			} else { this.$router.push(`/${this.$i18n.locale}#contact-section`) }
 		}
 	}
 })

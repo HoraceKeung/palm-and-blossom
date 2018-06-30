@@ -3,7 +3,7 @@
 		<div class="row mb-3">
 			<div class="col-md-2 col-lg-3"></div>
 			<div class="col-md-8 col-lg-6 px-below-md-5">
-				<h3 class="text-center">Make A Booking</h3>
+				<h3 class="text-center text-capitalize">{{$t('Make a booking')}}</h3>
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 				<!-- START Booking form -->
 				<form class="mb-3">
@@ -13,28 +13,36 @@
 							<input type="text" class="form-control" id="inputFirstName" v-model="form[f.model]">
 						</div>
 					</div>
-					<label for="inputMsg" class="col-form-label">What to do and when *</label>
+					<label for="inputMsg" class="col-form-label">{{$t('What to do and when')}} *</label>
 					<textarea rows="4" class="form-control mb-3" id="inputMsg" v-model="form.msg"></textarea>
-					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-outline">Send</button>
+					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-outline">{{$t('Send')}}</button>
 				</form>
 				<!-- END Booking form -->
-				<h3 class="text-center mb-3">Or</h3>
+				<h3 class="text-center mb-3">{{$t('Or')}}</h3>
 				<div class="row">
-					<div v-for="c in orContacts" :key="c" class="col-sm-6 d-flex mb-1">
-						<div class="bg-green rounded-circle my-auto mr-3 green-dot"></div>
-						<p class="my-auto">{{c}}</p>
+					<div v-for="c in orContacts" :key="c.info" class="col-sm-6 d-flex mb-1">
+						<fa class="text-white bg-green rounded-circle my-auto mr-3 green-dot p-2" :icon="c.icon"/>
+						<p class="my-auto">{{c.info}}</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<iframe class="w-100" height="400" frameborder="0" style="border:0" :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyA4zujbsG3Uu44j2qGVTYlKFURNL2uX82U&q='+orContacts[3].split(' ').join('+')" allowfullscreen></iframe>
+		<iframe class="w-100" height="400" frameborder="0" style="border:0" :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyA4zujbsG3Uu44j2qGVTYlKFURNL2uX82U&q='+orContacts[3].info.split(' ').join('+')" allowfullscreen></iframe>
 	</div>
 </template>
 
 <script>
 export default {
 	computed: {
-		disabled () { return !(this.form.firstName && this.form.lastName && this.form.phone && this.form.msg) }
+		disabled () { return !(this.form.firstName && this.form.lastName && this.form.phone && this.form.msg) },
+		fields () {
+			return [
+				{label: `${this.$t('First Name')} *`, type: 'text', id: 'inputFirstName', model: 'firstName'},
+				{label: `${this.$t('Last Name')} *`, type: 'text', id: 'inputLastName', model: 'lastName'},
+				{label: this.$t('Email Address'), type: 'email', id: 'inputEmail', model: 'email'},
+				{label: `${this.$t('Phone')} *`, type: 'tel', id: 'inputPhone', model: 'phone'}
+			]
+		}
 	},
 	methods: {
 		submitForm () {
@@ -60,16 +68,10 @@ export default {
 						pauseOnHover: true
 					})
 				}
-			})	
+			})
 		}
 	},
 	data: () => ({
-		fields: [
-			{label: 'First Name *', type: 'text', id: 'inputFirstName', model: 'firstName'},
-			{label: 'Last Name *', type: 'text', id: 'inputLastName', model: 'lastName'},
-			{label: 'Email Address', type: 'email', id: 'inputEmail', model: 'email'},
-			{label: 'Phone *', type: 'tel', id: 'inputPhone', model: 'phone'}
-		],
 		form: {
 			firstName: null,
 			lastName: null,
@@ -78,10 +80,10 @@ export default {
 			msg: null
 		},
 		orContacts: [
-			'+44 7521 563050',
-			'3703829230',
-			'+020 5131 13513',
-			'21 Carnaby Street, Soho, W1F 7DA'
+			{icon: ['fab', 'whatsapp'], info: '+44 7521 563050'},
+			{icon: ['fab', 'weixin'], info: '3703829230'},
+			{icon: ['fas', 'phone'], info: '+020 5131 13513'},
+			{icon: ['fas', 'map-marker-alt'], info: '21 Carnaby Street, Soho, W1F 7DA'}
 		]
 	})
 }

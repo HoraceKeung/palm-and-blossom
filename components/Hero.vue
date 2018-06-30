@@ -5,7 +5,9 @@
 				<img class="w-100" :src="`/img/${i}`">
 			</slide>
 		</carousel>
-		<img v-else :src="`/img/${images[0]}`">
+		<div v-else :style="`background-image: url('/img/${images[0]}'); background-size: cover; background-position: center; height: 20rem;`">
+			<div class="container h-100 d-flex px-md-5 text-white"><div class="my-auto"><slot/></div></div>
+		</div>
 	</div>
 </template>
 

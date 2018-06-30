@@ -1,10 +1,26 @@
 module.exports = {
 	mode: 'spa',
-	modules: ['nuxt-fontawesome'],
+	modules: [
+		'nuxt-fontawesome',
+		['nuxt-i18n', {
+			seo: false,
+			locales: [{code: 'en', name: 'English'}, {code: 'zh-Hans', name: '简体中文'}],
+			strategy: 'prefix',
+			defaultLocale: 'en',
+			vueI18n: {
+				fallbackLocale: 'en',
+				messages: {
+					'en': require('./static/i18n/en.json'),
+					'zh-Hans': require('./static/i18n/zh-Hans.json')
+				}
+			}
+		}]
+	],
 	fontawesome: {
 		component: 'fa',
 		imports: [
-			{set: '@fortawesome/fontawesome-free-brands', icons: ['faFacebookF', 'faInstagram', 'faWeixin', 'faWeibo']}
+			{set: '@fortawesome/fontawesome-free-solid', icons: ['faPhone', 'faMapMarkerAlt']},
+			{set: '@fortawesome/fontawesome-free-brands', icons: ['faFacebookF', 'faInstagram', 'faWeixin', 'faWeibo', 'faWhatsapp']}
 		]
 	},
 	/*

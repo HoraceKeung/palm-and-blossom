@@ -92,6 +92,12 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.1.7"
 
+"@fortawesome/fontawesome-free-solid@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-solid/-/fontawesome-free-solid-5.0.13.tgz#24b61aaf471a9d34a5364b052d64a516285ba894"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.7"
+
 "@fortawesome/fontawesome-svg-core@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.0.tgz#b0ec14af25cdc11d38ede7d8c94b89b478ab67ab"
@@ -141,7 +147,7 @@ acorn@^4.0.3:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0:
+acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0, acorn@^5.6.2:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
 
@@ -1002,6 +1008,10 @@ braces@^2.3.0, braces@^2.3.1:
 brorand@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
+
+browser-jsonp@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/browser-jsonp/-/browser-jsonp-1.1.5.tgz#2863c8d9328997ba4163bc2fa4b4db66f6f7479d"
 
 browserify-aes@^1.0.0, browserify-aes@^1.0.4:
   version "1.2.0"
@@ -2126,6 +2136,10 @@ eslint@^4.15.0:
     table "4.0.2"
     text-table "~0.2.0"
 
+esm@3.0.28:
+  version "3.0.28"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.28.tgz#1b912958328eb1c40538e7d24ce6bf3638bb83df"
+
 espree@^3.5.2, espree@^3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
@@ -2478,6 +2492,10 @@ fs-write-stream-atomic@^1.0.8:
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
 
 fsevents@^1.2.2:
   version "1.2.4"
@@ -3054,6 +3072,10 @@ isobject@^3.0.0, isobject@^3.0.1:
 js-base64@^2.1.9:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
+
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -3665,6 +3687,18 @@ nuxt-fontawesome@^0.3.0:
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.0"
     "@fortawesome/vue-fontawesome" "^0.1.0"
+
+nuxt-i18n@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-4.1.0.tgz#f7ae10250ea3964093b4188f90bff9caf6e508dd"
+  dependencies:
+    acorn "^5.6.2"
+    cookie "^0.3.1"
+    esm "3.0.28"
+    fs "^0.0.1-security"
+    js-cookie "^2.2.0"
+    vue-i18n "^7.8.0"
+    vue-i18n-extensions "^0.1.0"
 
 nuxt@^1.4.0:
   version "1.4.1"
@@ -5720,6 +5754,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vm2@^3.5.0:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.6.1.tgz#09c20e0d4adc8630a7dbbfc0bf0bce587c06cbb4"
+
 vue-carousel@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.9.0.tgz#3a81b48138a70af44de92cea43f70bf4e4daaf46"
@@ -5738,6 +5776,23 @@ vue-eslint-parser@^2.0.3:
 vue-hot-reload-api@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
+
+vue-i18n-extensions@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n-extensions/-/vue-i18n-extensions-0.1.0.tgz#58a65bc5c80abf000ca41735ef0cf4ccb480e013"
+  dependencies:
+    vm2 "^3.5.0"
+
+vue-i18n@^7.8.0:
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-7.8.1.tgz#2ce4b6efde679a1e05ddb5d907bfc1bc218803b2"
+
+vue-instagram@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vue-instagram/-/vue-instagram-2.0.1.tgz#cc717ce303d2789ccbcf25a735e2b91d1669223e"
+  dependencies:
+    browser-jsonp "^1.1.5"
+    lodash "^4.17.4"
 
 vue-loader@^13.7.2:
   version "13.7.2"
