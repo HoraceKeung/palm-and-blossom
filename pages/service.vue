@@ -3,7 +3,7 @@
 		<hero :images="['hero-service.jpg']">
 			<h1>See Our Menu</h1>
 			<h5>See what we can do for you</h5>
-			<button type="button" class="btn btn-pb-outline-white" @click="goToBooking">{{$t('Book now')}}</button>
+			<button type="button" class="btn btn-pb-inverse" @click="goToBooking">{{$t('Book now')}}</button>
 		</hero>
 		<div class="container py-5">
 			<div v-for="s in service" :key="s.title">

@@ -34,18 +34,24 @@ button:disabled {
 .btn, .pointer {
 	cursor: pointer;
 }
-.btn-pb-outline {
-	background-color: transparent;
+.btn {
 	border-radius: 0;
+}
+.btn-pb {
+	background-color: var(--pink);
+	color: var(--green);
 	border: 0.125rem solid #000;
 }
-.btn-pb-outline:hover, .btn-pb-outline-white:hover {
-	color: var(--green);
-	background-color: var(--pink);
-}
-.btn-pb-outline-white {
+.btn-pb-outline {
 	background-color: transparent;
-	border-radius: 0;
+	border: 0.125rem solid #000;
+}
+.btn-pb-outline:hover {
+	background-color: var(--pink);
+	color: var(--green);
+}
+.btn-pb-inverse {
+	background-color: var(--green);
 	color: #fff;
 	border: 0.125rem solid #fff;
 }

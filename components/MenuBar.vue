@@ -2,9 +2,9 @@
 	<div class="fixed-top bg-white border-bottom">
 		<div class="container py-2 d-flex" style="height: 4rem;">
 			<nuxt-link :to="localePath('index')"><img class="h-3" src="~assets/img/logo.jpg"></nuxt-link>
-			<div class="ml-auto d-none d-md-flex">
-				<nuxt-link v-for="l in links" :key="l.text" class="my-auto mr-3 pointer text-uppercase" :to="localePath(l.path)">{{l.text}}</nuxt-link>
-				<button type="button" class="my-auto btn btn-sm btn-pb-outline mr-3 text-uppercase" @click="goToBooking">{{$t('booking')}}</button>
+			<div class="ml-auto d-none d-md-flex font-weight-bold">
+				<nuxt-link v-for="l in links" :key="l.text" class="my-auto mr-3 pointer text-capitalize" :to="localePath(l.path)">{{l.text}}</nuxt-link>
+				<button type="button" class="my-auto btn btn-sm btn-pb mr-3 text-capitalize font-weight-bold" @click="goToBooking">{{$t('booking')}}</button>
 				<nuxt-link class="my-auto" :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 			</div>
 			<div class="ml-auto d-md-none">
@@ -12,9 +12,9 @@
 			</div>
 		</div>
 		<div v-show="expanded" class="py-2 d-md-none">
-			<div class="container">
-				<nuxt-link v-for="l in links" :key="l.text" class="pointer d-block mb-3" :to="localePath(l.path)">{{l.text}}</nuxt-link>
-				<button type="button" class="btn btn-sm btn-pb-outline text-uppercase d-block mb-3">{{$t('booking')}}</button>
+			<div class="container font-weight-bold">
+				<nuxt-link v-for="l in links" :key="l.text" class="pointer d-block mb-3 text-capitalize" :to="localePath(l.path)">{{l.text}}</nuxt-link>
+				<button type="button" class="btn btn-sm btn-pb text-capitalize d-block mb-3 font-weight-bold">{{$t('booking')}}</button>
 				<nuxt-link :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 			</div>
 		</div>
