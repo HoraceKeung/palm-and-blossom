@@ -37,23 +37,18 @@ button:disabled {
 .btn {
 	border-radius: 0;
 }
-.btn-pb {
-	background-color: var(--pink);
-	color: var(--green);
-	border: 0.125rem solid #000;
-}
-.btn-pb-outline {
+.btn-pb-b {
 	background-color: transparent;
 	border: 0.125rem solid #000;
 }
-.btn-pb-outline:hover {
-	background-color: var(--pink);
-	color: var(--green);
-}
-.btn-pb-inverse {
-	background-color: var(--green);
+.btn-pb-w {
+	background-color: transparent;
 	color: #fff;
 	border: 0.125rem solid #fff;
+}
+.btn-pb-b:hover, .btn-pb-w:hover {
+	background-color: var(--green);
+	color: #fff;
 }
 .h-3 {
 	height: 3rem;
@@ -74,6 +69,12 @@ button:disabled {
 		padding-right: 0;
 	}
 }
+.VueCarousel-pagination {
+	position: absolute;
+	bottom: 0;
+}
 .VueCarousel-dot {
-	margin-top: -1rem !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin: 0 !important;
 }

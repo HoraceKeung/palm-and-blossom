@@ -15,7 +15,7 @@
 					</div>
 					<label for="inputMsg" class="col-form-label">{{$t('What to do and when')}} *</label>
 					<textarea rows="4" class="form-control mb-3" id="inputMsg" v-model="form.msg"></textarea>
-					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-outline">{{$t('Send')}}</button>
+					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-b">{{$t('Send')}}</button>
 				</form>
 				<!-- END Booking form -->
 				<h3 class="text-center mb-3">{{$t('Or')}}</h3>

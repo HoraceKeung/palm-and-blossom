@@ -5,7 +5,7 @@
 			<h5>Nails Arts Fashion | Following Fashion Trends</h5>
 			<h5>Luxurious Nail Treatments</h5>
 			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank"><h5>@nnnailsartsss</h5></a>
-			<button type="button" class="btn btn-pb-inverse" @click="goToBooking">{{$t('Book now')}}</button>
+			<button type="button" class="btn btn-pb-w" @click="goToBooking">{{$t('Book now')}}</button>
 		</hero>
 		<div class="container py-5 px-below-md-0 text-center">
 			<vue-instagram token="7945594090.1677ed0.5524bce228674e1e86e2434567c22a19" :count="12">
@@ -16,7 +16,7 @@
 					<div>{{props.error.error_message}}</div>
 				</template>
 			</vue-instagram>
-			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank" class="mt-5 btn btn-lg btn-pb-outline font-weight-bold">{{$t('See more')}}...</a>
+			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank" class="mt-5 btn btn-lg btn-pb-b font-weight-bold">{{$t('See more')}}...</a>
 		</div>
 	</section>
 </template>

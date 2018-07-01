@@ -4,7 +4,7 @@
 			<nuxt-link :to="localePath('index')"><img class="h-3" src="~assets/img/logo.jpg"></nuxt-link>
 			<div class="ml-auto d-none d-md-flex font-weight-bold">
 				<nuxt-link v-for="l in links" :key="l.text" class="my-auto mr-3 pointer text-capitalize" :to="localePath(l.path)">{{l.text}}</nuxt-link>
-				<button type="button" class="my-auto btn btn-sm btn-pb mr-3 text-capitalize font-weight-bold" @click="goToBooking">{{$t('booking')}}</button>
+				<button type="button" class="my-auto btn btn-sm btn-pb-b mr-3 text-capitalize font-weight-bold" @click="goToBooking">{{$t('booking')}}</button>
 				<nuxt-link class="my-auto" :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 			</div>
 			<div class="ml-auto d-md-none">
@@ -14,7 +14,7 @@
 		<div v-show="expanded" class="py-2 d-md-none">
 			<div class="container font-weight-bold">
 				<nuxt-link v-for="l in links" :key="l.text" class="pointer d-block mb-3 text-capitalize" :to="localePath(l.path)">{{l.text}}</nuxt-link>
-				<button type="button" class="btn btn-sm btn-pb text-capitalize d-block mb-3 font-weight-bold">{{$t('booking')}}</button>
+				<button type="button" class="btn btn-sm btn-pb-b text-capitalize d-block mb-3 font-weight-bold">{{$t('booking')}}</button>
 				<nuxt-link :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 			</div>
 		</div>

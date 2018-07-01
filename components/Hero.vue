@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<carousel v-if="images.length > 1" :perPage="1" :autoplay="true" :autoplayTimeout="5000" :autoplayHoverPause="true">
+		<carousel v-if="images.length > 1" :perPage="1" :loop="true" :autoplay="true" :autoplayTimeout="5000" :autoplayHoverPause="true">
 			<slide v-for="i in images" :key="i">
 				<img class="w-100" :src="`/img/${i}`">
 			</slide>
