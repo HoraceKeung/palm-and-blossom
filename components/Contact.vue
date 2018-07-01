@@ -46,7 +46,7 @@ export default {
 	},
 	methods: {
 		submitForm () {
-			fetch('https://formspree.io/chenjiangquan123@gmail.com', {
+			fetch('https://formspree.io/michellehanyeung@gmail.com', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
