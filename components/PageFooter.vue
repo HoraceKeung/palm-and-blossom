@@ -35,6 +35,7 @@ export default {
 		contacts: [
 			{icon: ['fab', 'whatsapp'], info: '+44 7521 563050'},
 			{icon: ['fas', 'phone'], info: '+020 5131 13513'},
+			{icon: ['fas', 'map-marker-alt'], info: 'info@palmandblossom.com'},
 			{icon: ['fas', 'map-marker-alt'], info: '21 Carnaby Street, Soho, W1F 7DA'}
 		],
 		socials: [
