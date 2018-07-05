@@ -3,8 +3,8 @@
 		<div class="row mb-3">
 			<div class="col-md-2 col-lg-3"></div>
 			<div class="col-md-8 col-lg-6 px-below-md-5">
-				<h3 class="text-center text-capitalize">{{$t('Make a booking')}}</h3>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+				<h3 class="text-center text-capitalize font-weight-bold">{{$t('MAKE A BOOKING')}}</h3>
+				<p class="text-center">So many nail polishes, not enough fingers</p>
 				<!-- START Booking form -->
 				<form class="mb-3">
 					<div class="form-row">
@@ -18,7 +18,7 @@
 					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-b">{{$t('Book now')}}</button>
 				</form>
 				<!-- END Booking form -->
-				<h3 class="text-center mb-3">{{$t('Or')}}</h3>
+				<h3 class="text-center mb-4 font-weight-bold">{{$t('OR')}}</h3>
 				<div class="row">
 					<div v-for="c in orContacts" :key="c.info" class="col-sm-6 d-flex mb-1">
 						<fa class="text-white bg-green rounded-circle my-auto mr-3 green-dot p-2" :icon="c.icon"/>

@@ -26,7 +26,7 @@ a, a:visited, a:hover, a:active {
 	flex: 1;
 }
 h1 {
-	text-shadow: 0.2rem 0.2rem var(--green);
+	color: #1a6320;
 }
 button:disabled {
 	cursor: no-drop;
@@ -57,7 +57,9 @@ button:disabled {
 	background-color: var(--green);
 }
 .bg-pink {
-	background-color: var(--pink);
+	background-image: url('~/assets/img/bg-pink.jpg');
+	background-size: cover;
+	background-position: center;
 }
 @media only screen and (max-width: 768px) {
     .px-below-md-5 {

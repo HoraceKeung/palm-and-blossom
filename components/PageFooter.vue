@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Make a booking')}}</h4>
-					<button type="button" class="btn btn-pb-b" @click="goToBooking">{{$t('Book now')}}</button>
+					<button type="button" class="btn btn-pb-b font-weight-bold" @click="goToBooking">{{$t('Book now')}}</button>
 				</div>
 				<div class="col-md"></div>
 			</div>

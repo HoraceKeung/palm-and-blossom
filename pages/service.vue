@@ -1,9 +1,9 @@
 <template>
 	<section>
 		<hero :images="['hero-service.jpg']">
-			<h1>See Our Menu</h1>
+			<h1 class="font-weight-bold">SEE OUR MENU</h1>
 			<h5>See what we can do for you</h5>
-			<button type="button" class="btn btn-pb-w" @click="goToBooking">{{$t('Book now')}}</button>
+			<button type="button" class="btn btn-pb-w font-weight-bold" @click="goToBooking">{{$t('Book now')}}</button>
 		</hero>
 		<div class="container py-5">
 			<div v-for="s in service" :key="s.title">

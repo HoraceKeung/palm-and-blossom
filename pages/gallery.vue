@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<hero :images="['hero-gallery.jpg']">
-			<h1>See Our Work</h1>
+			<h1 class="font-weight-bold">SEE OUR WORKS</h1>
 			<h5>Nails Arts Fashion | Following Fashion Trends</h5>
 			<h5>Luxurious Nail Treatments</h5>
 			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank"><h5>@nnnailsartsss</h5></a>
