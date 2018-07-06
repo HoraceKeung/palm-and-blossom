@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Make a booking')}}</h4>
-					<button type="button" class="btn btn-pb-b font-weight-bold" @click="goToBooking">{{$t('Book now')}}</button>
+					<button type="button" class="btn btn-pb-b" @click="goToBooking">{{$t('Book now')}}</button>
 				</div>
 				<div class="col-md"></div>
 			</div>
@@ -35,7 +35,7 @@ export default {
 		contacts: [
 			{icon: ['fab', 'whatsapp'], info: '+44 7521 563050'},
 			{icon: ['fas', 'phone'], info: '+020 5131 13513'},
-			{icon: ['fas', 'map-marker-alt'], info: 'info@palmandblossom.com'},
+			{icon: ['fas', 'envelope'], info: 'info@palmandblossom.com'},
 			{icon: ['fas', 'map-marker-alt'], info: '21 Carnaby Street, Soho, W1F 7DA'}
 		],
 		socials: [

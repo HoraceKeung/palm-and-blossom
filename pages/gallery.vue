@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<hero :images="['hero-gallery.jpg']">
-			<h1 class="font-weight-bold">SEE OUR WORKS</h1>
+			<h1>SEE OUR WORKS</h1>
 			<h5>Nails Arts Fashion | Following Fashion Trends</h5>
 			<h5>Luxurious Nail Treatments</h5>
 			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank"><h5>@nnnailsartsss</h5></a>
@@ -16,7 +16,7 @@
 					<div>{{props.error.error_message}}</div>
 				</template>
 			</vue-instagram>
-			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank" class="mt-5 btn btn-lg btn-pb-b font-weight-bold">{{$t('See more')}}...</a>
+			<a href="https://www.instagram.com/nnnailsartsss/" target="_blank" class="mt-5 btn btn-lg btn-pb-b">{{$t('See more')}}...</a>
 		</div>
 	</section>
 </template>

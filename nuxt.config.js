@@ -19,7 +19,7 @@ module.exports = {
 	fontawesome: {
 		component: 'fa',
 		imports: [
-			{set: '@fortawesome/fontawesome-free-solid', icons: ['faPhone', 'faMapMarkerAlt']},
+			{set: '@fortawesome/fontawesome-free-solid', icons: ['faPhone', 'faMapMarkerAlt', 'faEnvelope']},
 			{set: '@fortawesome/fontawesome-free-brands', icons: ['faFacebookF', 'faInstagram', 'faWeixin', 'faWeibo', 'faWhatsapp']}
 		]
 	},

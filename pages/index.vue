@@ -9,9 +9,9 @@
 				</div>
 				<div class="col-md-6 d-flex px-5">
 					<div class="my-auto">
-						<h3 class="text-capitalize font-weight-bold">{{$t('ABOUT US')}}</h3>
+						<h3 class="text-uppercase">{{$t('About us')}}</h3>
 						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-						<nuxt-link class="btn btn-pb-b font-weight-bold text-capitalize" :to="localePath('gallery')">{{$t('gallery')}}</nuxt-link>
+						<nuxt-link class="btn btn-pb-b text-capitalize" :to="localePath('gallery')">{{$t('gallery')}}</nuxt-link>
 					</div>
 				</div>
 			</div>
@@ -21,7 +21,7 @@
 			<div class="container py-5">
 				<div class="row">
 					<div class="col-md-8 px-below-md-5">
-						<h3 class="text-capitalize font-weight-bold">Where Details Means Everything</h3>
+						<h3 class="text-capitalize">Where Details Means Everything</h3>
 						<p class="mb-0">Do you want to be the center of the party? Bring your nails to us.</p>
 					</div>
 				</div>
@@ -36,5 +36,4 @@ import Contact from '~/components/Contact'
 export default {
 	components: {Contact}
 }
-
 </script>

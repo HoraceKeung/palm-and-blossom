@@ -26,7 +26,11 @@ a, a:visited, a:hover, a:active {
 	flex: 1;
 }
 h1 {
-	color: #1a6320;
+	color: var(--green);
+	font-weight: 700;
+}
+h3 {
+	font-weight: 700;
 }
 button:disabled {
 	cursor: no-drop;
@@ -36,6 +40,7 @@ button:disabled {
 }
 .btn {
 	border-radius: 0;
+	font-weight: 700;
 }
 .btn-pb-b {
 	background-color: transparent;

@@ -3,7 +3,7 @@
 		<div class="row mb-3">
 			<div class="col-md-2 col-lg-3"></div>
 			<div class="col-md-8 col-lg-6 px-below-md-5">
-				<h3 class="text-center text-capitalize font-weight-bold">{{$t('MAKE A BOOKING')}}</h3>
+				<h3 class="text-center text-uppercase">{{$t('Make a booking')}}</h3>
 				<p class="text-center">So many nail polishes, not enough fingers</p>
 				<!-- START Booking form -->
 				<form class="mb-3">
@@ -18,7 +18,7 @@
 					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-sm btn-pb-b">{{$t('Book now')}}</button>
 				</form>
 				<!-- END Booking form -->
-				<h3 class="text-center mb-4 font-weight-bold">{{$t('OR')}}</h3>
+				<h3 class="text-center text-uppercase mb-4">{{$t('Or')}}</h3>
 				<div class="row">
 					<div v-for="c in orContacts" :key="c.info" class="col-sm-6 d-flex mb-1">
 						<fa class="text-white bg-green rounded-circle my-auto mr-3 green-dot p-2" :icon="c.icon"/>
