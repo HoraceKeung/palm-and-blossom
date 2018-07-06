@@ -85,3 +85,6 @@ button:disabled {
 	padding-bottom: 0 !important;
 	margin: 0 !important;
 }
+.flatpickr-input {
+	background-color: #fff !important;
+}

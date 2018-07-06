@@ -1,8 +1,11 @@
 import Vue from 'vue'
+import flatPickr from 'vue-flatpickr-component'
+import 'flatpickr/dist/flatpickr.css'
 import Snotify from 'vue-snotify'
 import VueCarousel from 'vue-carousel'
 import VueInstagram from 'vue-instagram'
 import Hero from '~/components/Hero'
+Vue.use(flatPickr)
 Vue.use(Snotify)
 Vue.use(VueCarousel)
 Vue.use(VueInstagram)

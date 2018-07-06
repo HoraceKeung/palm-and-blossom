@@ -12,8 +12,12 @@
 							<label for="inputFirstName" class="col-form-label">{{f.label}}</label>
 							<input type="text" class="form-control" id="inputFirstName" v-model="form[f.model]">
 						</div>
+						<div class="form-group col-md-6">
+							<label class="text-capitalize">{{$t('time')}} *</label>
+							<flat-pickr v-model="form.time" :config="dateTimeConfig" class="form-control"></flat-pickr>
+						</div>
 					</div>
-					<label for="inputMsg" class="col-form-label">{{$t('What to do and when')}} *</label>
+					<label for="inputMsg" class="col-form-label">{{$t('Request')}} *</label>
 					<textarea rows="4" class="form-control mb-3" id="inputMsg" v-model="form.msg"></textarea>
 					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-pb-b">{{$t('Book now')}}</button>
 				</form>
@@ -77,6 +81,7 @@ export default {
 			lastName: null,
 			email: null,
 			phone: null,
+			time: null,
 			msg: null
 		},
 		orContacts: [
@@ -84,7 +89,11 @@ export default {
 			{icon: ['fab', 'weixin'], info: '3703829230'},
 			{icon: ['fas', 'phone'], info: '+020 5131 13513'},
 			{icon: ['fas', 'map-marker-alt'], info: '21 Carnaby Street, Soho, W1F 7DA'}
-		]
+		],
+		dateTimeConfig: {
+			enableTime: true,
+			altInput: true
+		}
 	})
 }
 </script>
