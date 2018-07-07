@@ -18,6 +18,7 @@
 		</div>
 		<!-- END About us -->
 		<div class="bg-pink py-5">
+			<div class="position-relative"><bubbles/></div>
 			<div class="container py-5">
 				<div class="row">
 					<div class="col-md-8 px-below-md-5">
@@ -33,7 +34,8 @@
 
 <script>
 import Contact from '~/components/Contact'
+import Bubbles from '~/components/Bubbles'
 export default {
-	components: {Contact}
+	components: {Contact, Bubbles}
 }
 </script>
