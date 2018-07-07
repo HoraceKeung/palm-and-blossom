@@ -2,3 +2,7 @@
     font-family: msyh;
     src: url(~/assets/font/msyh.ttf);
 }
+@font-face {
+    font-family: sabon;
+    src: url(~/assets/font/SabonLTStd-Roman.otf);
+}
