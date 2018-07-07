@@ -1,6 +1,6 @@
 <template>
 	<div class="bubbles-container">
-		<svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 170">
+		<svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200">
 			<g class="bubbles-large" stroke-width="4">
 				<g v-for="(b,index) in b1" :key="'b1'+index">
 					<g :transform="`translate(${b.x} 200)`">
@@ -56,7 +56,8 @@ export default {
 	top: -50px;
 	width: 100%;
 	opacity: 0.75;
-	max-height: 250px;
+	max-height: 260px;
+	overflow: hidden;
 }
 
 .bubbles {
