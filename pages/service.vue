@@ -1,9 +1,10 @@
 <template>
 	<section>
 		<hero :images="['hero-service.jpg']">
-			<h1>SEE OUR MENU</h1>
-			<h5>See what we can do for you</h5>
-			<button type="button" class="btn btn-pb-w" @click="goToBooking">{{$t('Book now')}}</button>
+			<h2>Beauty, Delicacy, Charm.</h2>
+			<h2>Your nails will be part of it.</h2>
+			<h4>Let your nails be the center of every occasion</h4>
+			<button type="button" class="btn btn-lg btn-pb-b text-white py-3 px-4 mt-1" @click="goToBooking">{{$t('BOOK NOW')}}</button>
 		</hero>
 		<div class="container py-5">
 			<div v-for="s in service" :key="s.title">

@@ -6,3 +6,7 @@
     font-family: sabon;
     src: url(~/assets/font/SabonLTStd-Roman.otf);
 }
+@font-face {
+    font-family: GothamMedium;
+    src: url(~/assets/font/GothamMedium.ttf);
+}

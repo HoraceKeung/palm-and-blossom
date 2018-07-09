@@ -1,12 +1,13 @@
 <template>
+<div>
 	<div id="contact-section" class="container py-5">
 		<div class="row mb-3">
 			<div class="col-md-2 col-lg-3"></div>
 			<div class="col-md-8 col-lg-6 px-below-md-5">
-				<h3 class="text-center text-uppercase">{{$t('Make a booking')}}</h3>
-				<p class="text-center">So many nail polishes, not enough fingers</p>
+				<h1 class="text-center text-uppercase mt-4">{{$t('Make a booking')}}</h1>
+				<h4 class="text-center">So many nail polishes, not enough fingers</h4>
 				<!-- START Booking form -->
-				<form class="mb-3">
+				<form class="mb-3 mt-5">
 					<div class="form-row">
 						<div v-for="f in fields" :key="f.id" class="form-group col-md-6">
 							<label for="inputFirstName" class="col-form-label">{{f.label}}</label>
@@ -19,20 +20,42 @@
 					</div>
 					<label for="inputMsg" class="col-form-label">{{$t('Request')}} *</label>
 					<textarea rows="4" class="form-control mb-3" id="inputMsg" v-model="form.msg"></textarea>
-					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-pb-b">{{$t('Book now')}}</button>
+					<button :disabled="disabled" @click.prevent="submitForm" type="submit" class="btn btn-pb-b py-2 px-3">{{$t('SEND')}}</button>
 				</form>
 				<!-- END Booking form -->
-				<h3 class="text-center text-uppercase mb-4">{{$t('Or')}}</h3>
-				<div class="row">
-					<div v-for="c in orContacts" :key="c.info" class="col-sm-6 d-flex mb-1">
-						<fa class="text-white bg-green rounded-circle my-auto mr-3 green-dot p-2" :icon="c.icon"/>
-						<p class="my-auto">{{c.info}}</p>
-					</div>
-				</div>
 			</div>
 		</div>
-		<iframe class="w-100" height="400" frameborder="0" style="border:0" :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyA4zujbsG3Uu44j2qGVTYlKFURNL2uX82U&q='+orContacts[3].info.split(' ').join('+')" allowfullscreen></iframe>
 	</div>
+
+	<div class="bg-or py-5"  style="height: 40rem;">
+			<div class="row">
+				<div class="col-md-2 col-lg-3"></div>
+				<div class="col-md-8 col-lg-6 px-below-md-5 " style="margin-top: 10rem;">
+
+						<div class="col-md-12 px-lg-4 py-5 bg-white">
+							<h1 class="text-center text-uppercase mb-4">{{$t('Or')}}</h1>
+							<div class="row col-md-8">
+								<div v-for="c in orContacts" :key="c.info" class="col-sm-6 d-flex mb-1">
+									<fa class="text-white bg-green rounded-circle my-auto mr-3 green-dot p-2" :icon="c.icon"/>
+									<p class="my-auto">{{c.info}}</p>
+								</div>
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+	</div>
+
+	<div class="container py-5">
+      <iframe class="w-100" height="500" frameborder="0" style="border:0" :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyA4zujbsG3Uu44j2qGVTYlKFURNL2uX82U&q='+orContacts[3].info.split(' ').join('+')" allowfullscreen></iframe>
+	</div>
+
+
+
+</div>
+
+
 </template>
 
 <script>
@@ -105,4 +128,5 @@ export default {
 	width: 2rem;
 	min-width: 2rem;
 }
+
 </style>

@@ -3,8 +3,8 @@
 		<div class="container py-2 d-flex" style="height: 4rem;">
 			<nuxt-link :to="localePath('index')"><img class="h-3" src="~assets/img/logo.jpg"></nuxt-link>
 			<div class="ml-auto d-none d-md-flex font-weight-bold">
-				<nuxt-link v-for="l in links" :key="l.text" class="my-auto mr-3 pointer text-capitalize" :to="localePath(l.path)">{{l.text}}</nuxt-link>
-				<button type="button" class="my-auto btn btn-sm btn-pb-b mr-3 text-capitalize" @click="goToBooking">{{$t('booking')}}</button>
+				<nuxt-link v-for="l in links" :key="l.text" class="my-auto mr-4 pointer" :to="localePath(l.path)">{{l.text}}</nuxt-link>
+				<button type="button" class="my-auto btn btn-sm btn-pb-b mr-4 py-2 px-3" @click="goToBooking">{{$t('BOOKING')}}</button>
 				<nuxt-link class="my-auto" :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 			</div>
 			<div class="ml-auto d-md-none">
@@ -30,9 +30,9 @@ export default {
 		expanded () { return this.$store.state.isMenuExpanded },
 		links () {
 			return [
-				{text: this.$t('home'), path: 'index'},
-				{text: this.$t('gallery'), path: 'gallery'},
-				{text: this.$t('service'), path: 'service'},
+				{text: this.$t('HOME'), path: 'index'},
+				{text: this.$t('GALLERY'), path: 'gallery'},
+				{text: this.$t('SERVICE'), path: 'service'},
 			]
 		}
 	}

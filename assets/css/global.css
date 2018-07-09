@@ -12,15 +12,18 @@ html {
 	box-sizing: border-box;
 }
 body {
-	font-family: sabon, msyh;
+	font-family: sabon;
 }
 *, *:before, *:after {
 	box-sizing: border-box;
 	margin: 0;
 }
 a, a:visited, a:hover, a:active {
+	font-family: GothamMedium;
 	color: inherit;
 	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 2px;
 }
 .flex-grow {
 	flex: 1;
@@ -29,8 +32,19 @@ h1 {
 	color: var(--green);
 	font-weight: 700;
 }
-h3 {
+h2{
+	font-family: GothamMedium;
+	color: var(--green);
+}
+h2, h3 {
 	font-weight: 700;
+}
+h4 {
+	letter-spacing: -1px;
+	color: #000;
+}
+p {
+	font-size: 17px;
 }
 button:disabled {
 	cursor: no-drop;
@@ -39,12 +53,15 @@ button:disabled {
 	cursor: pointer;
 }
 .btn {
-	border-radius: 0;
-	font-weight: 700;
+	border-radius: 2px;
+	font-family: GothamMedium;
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 2px;
 }
 .btn-pb-b {
-	background-color: transparent;
-	border: 0.125rem solid #000;
+	background-color: var(--green);
+	color: #fff;
 }
 .btn-pb-w {
 	background-color: transparent;
@@ -52,7 +69,7 @@ button:disabled {
 	border: 0.125rem solid #fff;
 }
 .btn-pb-b:hover, .btn-pb-w:hover {
-	background-color: var(--green);
+	background-color: #38633c;
 	color: #fff;
 }
 .h-3 {
@@ -63,6 +80,11 @@ button:disabled {
 }
 .bg-pink {
 	background-image: url('~/assets/img/bg-pink.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.bg-or {
+	background-image: url('~/assets/img/bg-or.jpg');
 	background-size: cover;
 	background-position: center;
 }

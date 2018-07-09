@@ -2,7 +2,6 @@
 	<div class="bg-footer">
 		<div class="container py-5">
 			<div class="row">
-				<div class="col-md"></div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Get in touch')}}</h4>
 					<div v-for="c in contacts" :key="c.info" class="d-flex">
@@ -10,6 +9,7 @@
 						<p class="mb-2">{{c.info}}</p>
 					</div>
 				</div>
+				<div class="col-md-1"></div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Follow us')}}</h4>
 					<div v-for="s in socials" :key="s.text" class="d-flex pointer" @click="goTo(s.url)">
@@ -17,11 +17,16 @@
 						<p class="mb-2">{{s.text}}</p>
 					</div>
 				</div>
+				<div class="col-md-1"></div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Make a booking')}}</h4>
-					<button type="button" class="btn btn-pb-b" @click="goToBooking">{{$t('Book now')}}</button>
+					<button type="button" class="btn btn-pb-b py-2 px-3" @click="goToBooking">{{$t('BOOK NOW')}}</button>
 				</div>
-				<div class="col-md"></div>
+				<div class="col-md-1"></div>
+				<div class="col-md mb-3 px-below-md-5">
+					<h4 class="text-capitalize font-weight-bold">{{$t('Language')}}</h4>
+					<button type="button" class="btn btn-pb-b py-2 px-3" @click="goToBooking">{{$t('BOOK NOW')}}</button>
+				</div>
 			</div>
 		</div>
 	</div>
