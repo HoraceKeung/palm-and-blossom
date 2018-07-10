@@ -25,7 +25,7 @@
 				<div class="col-md-1"></div>
 				<div class="col-md mb-3 px-below-md-5">
 					<h4 class="text-capitalize font-weight-bold">{{$t('Language')}}</h4>
-					<button type="button" class="btn btn-pb-b py-2 px-3" @click="goToBooking">{{$t('BOOK NOW')}}</button>
+					<nuxt-link class="btn btn-pb-b py-2 px-3 text-white" :to="switchLocalePath(langSwitcher.code)">{{langSwitcher.name}}</nuxt-link>
 				</div>
 			</div>
 		</div>
@@ -36,6 +36,11 @@
 // https://www.npmjs.com/package/vue-qr
 // https://www.npmjs.com/package/@xkeshi/vue-qrcode
 export default {
+	computed: {
+		langSwitcher () {
+			return this.$i18n.locales.filter(l => l.code !== this.$i18n.locale)[0]
+		}
+	},
 	data: () => ({
 		contacts: [
 			{icon: ['fab', 'whatsapp'], info: '+44 7521 563050'},
